@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-uv-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/ed10287680.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+              <p>Front-End Web Developer</p>
+              <h1>Hi, I'm <span>Jagdish</span><br>Tiadi From India </h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------about------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png"> 
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hi i am  a Jagdish Tiadi pursing computer science from mumbai unversity
+                        staying in maharstra in the city of mumbai.In my family i have four member
+                        icluding me my Mom Dad and elder sister.And My Hard Skill Include Like
+                        Front-End Web Devlopment & GRAPHIC DESIGN. In This i know Different
+                         programming language And Different Software like In language I Know 
+                        HTML,CSS,JAVASCRIPT,PYTHON,PYTHON OOPS,C,C++,LINUX,RUBY,MY SQUL In Software
+                        I Know Adobe INDesign,Adobe illustrator,Adobe Photoshop,CorelDRAW.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                              <li><span>Front-End Devlopment</span><br>Web Devlopment </li>
+                            <li><span>GRAPHIC DESIGN</span><br>create logos, brochures,<br> websites, packaging, <br>and promotional materials</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                              <li><span>10/7/2024 TO 10/8/2024</span><br>InternShip At Bharat Intern</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                              <li><span>2020</span><br>SCC From karthika high school & junior college</li>
+                              <li><span>2022</span><br>HSC From karthika high school & junior college</li>
+                              <li><span>2022</span><br>pursing From computer science universal college</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+</div>
+<!-- ------Services----------- -->
+<div id="service">
+    <div class="container">
+        <h1 class="sub-title">My Service</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Front-End Devlop</h2>
+                <p>creates websites and applications using web languages such as HTML, CSS, and JavaScript that allow users to access and interact with the WEB site or app</p>
+                <a href="#">Learn</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>GRAPHIC DESIGN</h2>
+                <p>create logos, brochures, websites, packaging, and promotional materials</p>
+                <a href="#">Learn</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------portfolio-------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you yo the talented people around the world.
+                        Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Music app</h3>
+                    <p>The app connects you yo the talented people around the world.
+                        Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                </div>
+                <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you yo the talented people around the world.
+                        Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------------contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> jagdishtiadi001@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>7738108672</p>
+            <div class="Social-icon">
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="Resume-1.pdf" download class="btn btn2">Download cv</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ Jagdish. Made<i class="fa-solid fa-heart"></i> by Jagdish</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+
+<script>
+
+    varsidemenu= document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px"
+    }
+</script>
+
+
+</body>
+</html>
